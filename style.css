@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&family=IBM+Plex+Sans+Condensed:ital@0;1&family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=IBM+Plex+Serif:ital@0;1&family=Inconsolata:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  background-color: rgba(0, 0, 0, 0.827);
+  color: white;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+}
+nav ul {
+  padding-left: 10px;
+  margin-left: 10px;
+  list-style: none;
+  font-size: 28px;
+  font-family: "EB Garamond", serif;
+}
+.game {
+  display: flex;
+  margin-top: 2vh;
+  align-items: center;
+  justify-content: space-between;
+  height: 95vh;
+
+}
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 35vw;
+  height: 32vw;
+  /* background-color: yellow; */
+  margin-left: 150px;
+  position: relative;
+}
+.box {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5vw;
+  
+}
+.boxtest{
+  width: 10vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box:hover {
+  background-color: rgba(106, 119, 124, 0.949);
+}
+.info {
+  /* background-color: pink; */
+  padding: 20px;
+  width: 35vw;
+  height: 32vw;
+  margin-right: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+  font-family: "EB Garamond", serif;
+}
+.line
+{
+  width: 0vw;
+  height:2px;
+  background-color: rgb(236, 33, 33);
+  position: absolute;
+  transition: width 1s ease-in-out;
+  
+}
+/* .text h1 */
+#gif{
+  width: 0vw;
+  height: 28vw;
+  /* display: none; */
+}
+
+/* utility class ------------------*/
+.br
+{
+   border-right: 0px;
+}
+.bl
+{
+    border-left: 0px;
+}
+.bt
+{
+   border-top: 0px;
+}
+.bb
+{
+      border-bottom: 0px;
+}
+#reset{
+    background-color:rgba(128, 128, 128, 0.196);
+    color: black;
+    padding: 10px;
+    border-radius: 15px;
+    width: 10vh;
+    margin: 2vh;
+
+}
+#reset:hover{
+    background-color:rgba(128, 128, 128, 0.845);
+    
+
+}
+/* responsive ------------- */
+@media screen and (max-width:1053px){
+ 
+          .info{
+            font-size: small;
+            /* color: white; */
+
+          }
+          
+}
+@media screen and (max-width:818px){
+ 
+  .game
+  {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* background-color: pink; */
+   
+  
+  }
+  .container
+  {
+    /* background-color:red; */
+    margin-left: 100px;
+    height: 20vw;
+ 
+    
+  }
+  .info
+  {
+    /* margin-top: 100px; */
+    /* background-color: goldenrod; */
+    margin:auto;
+    margin-left: 100px;
+   
+  }
+  .info{
+    font-size: 1vh;
+    /* color: white; */
+
+  }
+  #reset{
+    width: 8vh;
+    padding: 4px;
+  }
+          
+}
