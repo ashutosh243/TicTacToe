@@ -1,4 +1,3 @@
-console.log("TicToc");
 let click=new Audio("audio/ting.mp3")
 let Gameover=new Audio("audio/music.mp3");
 // change turn
@@ -30,12 +29,11 @@ function checkwin()
         ];
     wins.forEach(function(e){
 
-        // console.log("Hi")
+       
         let textbox=document.getElementsByClassName("boxtest");
         if((textbox[e[0]].innerText===textbox[e[1]].innerText)&&(textbox[e[1]].innerText==textbox[e[2]].innerText)&&(textbox[e[0]].innerText!==""))
         {
             document.getElementById("turn").innerText=`----> Winner of the game is ${textbox[e[0]].innerText}`;
-            console.log("HEllo");
             iswin=true;
             let img=document.getElementById("gif");
             Gameover.play();
